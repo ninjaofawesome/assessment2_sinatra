@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'sqlite3'
+gem 'sinatra', require: 'sinatra/base'
+
+group :development do
+	gem 'shotgun'
+	gem 'tux'
+end
+
 gem 'bootstrap'
-gem 'activerecord'
-gem 'shotgun'
-gem 'tux'
+gem 'sqlite3'
+

@@ -2,10 +2,11 @@ Dir["./lib/*"].each {|file| require file }
 
 module SpaceCats
 	class Spacecat < Sinatra::Application
+	#kept getting "NameError: uninitialized constant SpaceCats::Sinatra" error, 
+	#spent a lot of time trying new things without looking it up, put aside this project, 
+	#went to sql section of test. 2:49pm.
 
 		get '/' do
-			@cat = Spacecat.new
-
 			erb :index
 		end
 
@@ -14,11 +15,13 @@ module SpaceCats
 			erb :results
 		end
 
-		get '/new' do
-
-			erb :new_cat
+		get '/results' do
+	
 		end
 
+		post '/all_cats' do
+			erb :all_cats
+		end
 
 
 			
