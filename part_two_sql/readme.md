@@ -143,24 +143,32 @@ Class Powers <  ActiveRecord::Base
 end
 
 
-
-
 ****Retrieve all the wizards with powers that have the letter "l" in them.
 
-Retrieve all the wizards who have a combined damage of 10 or more.
+Select * FROM powers
+WHERE power = /[l]/
 
-Retrieve all the wizards sorted by their total damage. Your returned data should look like so.. wizard_name, total_damage.
+(would that even work??)
 
-Create a wizard that has no powers.
+****Retrieve all the wizards who have a combined damage of 10 or more.
 
-Retrieve all wizards that have no powers.
+Select * FROM powers
+WHERE power > 10
 
-Create a data model for wizards for a world where wizards have many powers and multiple wizards can have the same power. Create some sample records.
+****Retrieve all the wizards sorted by their total damage. Your returned data should look like so.. wizard_name, total_damage.
 
-Retrieve the first wizard and any powers he/she has with damage greater than 5.
+****Create a wizard that has no powers.
 
-What's the difference between an outer and inner join?
+****Retrieve all wizards that have no powers.
 
-If I just write JOIN, is that an inner or outer join?
+****Create a data model for wizards for a world where wizards have many powers and multiple wizards can have the same power. Create some sample records.
 
-When would I want to use an outer join?
+****Retrieve the first wizard and any powers he/she has with damage greater than 5.
+
+****What's the difference between an outer and inner join?
+
+****If I just write JOIN, is that an inner or outer join?
+
+Its an inner join.
+
+****When would I want to use an outer join?
